@@ -1,15 +1,15 @@
 package com.app.briefi.sclool_manager.modells;
 
 import com.app.briefi.sclool_manager.IDBCongig.IDBConfig;
+import com.app.briefi.sclool_manager.Studentlist;
 import com.app.briefi.sclool_manager.interfaces.StudentInterface;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextField;
 
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student extends User implements StudentInterface {
@@ -110,6 +110,8 @@ public class Student extends User implements StudentInterface {
 
             prepareStatement.close();
 
+
+
             this.connection.close();
 
         }
@@ -117,7 +119,7 @@ public class Student extends User implements StudentInterface {
     }
 
     @Override
-    public List<StudentInterface> list() throws SQLException {
+    public List<Student> list() throws SQLException {
         return null;
     }
 

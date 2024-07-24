@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.briefi.sclool_manager.controllers.studentController">
+<AnchorPane fx:id="anchopane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.briefi.sclool_manager.controllers.TableStudentController">
    <children>
       <VBox prefHeight="300.0" prefWidth="600.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -39,7 +39,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="87.0" layoutY="362.0" prefHeight="17.0" prefWidth="103.0" text="Ajouter un Elève" textAlignment="CENTER" textFill="#3185fc">
+      <Label fx:id="add" alignment="CENTER" layoutX="87.0" layoutY="362.0" prefHeight="17.0" prefWidth="103.0" text="Ajouter un Elève" textAlignment="CENTER" textFill="#3185fc">
          <font>
             <Font size="13.0" />
          </font>

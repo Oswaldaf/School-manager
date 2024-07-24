@@ -58,14 +58,14 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <HBox layoutY="500.0" prefHeight="100.0" prefWidth="500.0" style="-fx-background-color: #3185FC;">
+      <HBox layoutY="537.0" prefHeight="63.0" prefWidth="500.0" style="-fx-background-color: #3185FC;">
          <children>
             <Text fill="#dada05" strokeType="OUTSIDE" strokeWidth="0.0" text="Page d'enrégistrement des Elèves" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="25.0" />
                </font>
                <HBox.margin>
-                  <Insets left="40.0" top="10.0" />
+                  <Insets left="40.0" top="25.0" />
                </HBox.margin>
             </Text>
          </children>
@@ -74,6 +74,11 @@
       <Label layoutX="19.0" layoutY="401.0" text="Statue de l'Elève">
          <font>
             <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbetat" layoutX="120.0" layoutY="501.0" prefHeight="36.0" prefWidth="275.0" textFill="#3400f2">
+         <font>
+            <Font name="System Bold" size="25.0" />
          </font>
       </Label>
    </children>
